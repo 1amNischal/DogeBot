@@ -1770,17 +1770,7 @@ break
 case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
   reply('*click on the link below*\nwa.me/918919822103')
-break
-
-case 'insult':
-  if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-    const insultApi = "https://evilinsult.com/generate_insult.php?lang=en&type=json";
-      async function getInsult() {
-        const response = await fetch(insultApi);
-        const data = await response.json();
-        reply(`${data.insult}`)
-      }
-   
+break   
 case 'owner':
            case 'creator':
              

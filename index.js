@@ -123,14 +123,14 @@ const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
       var ucapanWaktu = "Good night🌃";
     }
  // BATAS \\
-menusimpel = false
-banChats = false;
+menusimpel = true
+banChats = true;
 offline = false;
 antidel = false;
-welcom = false;
+welcom = true;
 antical = false
 readGc = true; 
-readPc = false;
+readPc = ture;
 autovn = false;
 multi = true
 harga = 0
@@ -151,7 +151,7 @@ dapapi = "anakasu",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
 nomorowner1 = "@918919822103"; 
-fake = `𝗢𝘄𝗻𝗲𝗿 : ${fakeyoi}\n㋛︎ 𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
+fake = `𝗢𝘄𝗻𝗲𝗿 : ${fakeyoi}\n㋛︎ 𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "!"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
 waktu = "-";
@@ -162,7 +162,7 @@ hit_today = [];
 //=================================================//
 let _scommand = JSON.parse(fs.readFileSync("./database/scommand.json"));
 
-// 𝗙𝘂𝗻𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 シ︎
+// 𝗙𝘂𝗻𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 ۞
 const addCmd = (id, command) => {
   const obj = { id: id, chats: command };
   _scommand.push(obj);
@@ -251,7 +251,7 @@ if (multi){
             var prefix = /^[°zZ#$@*+,.?=''():√%!¢£¥€π¤ΠΦ_&><`™©®Δ^βα¦|/\\©^]/.test(cmd) ? cmd.match(/^[°zZ#$@*+,.?=''():√%¢£¥€π¤ΠΦ_&><!`™©®Δ^βα¦|/\\©^]/gi) : '.'
         } else {
             if (nopref){
-                prefix = ''
+                prefix = '!'
             } else {
                 prefix = prefa
             }
@@ -420,8 +420,8 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 cmhit.push(command)
     //MESS
     mess = {
-      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 シ︎",
-      success: "Success シ︎",
+      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 ۞",
+      success: "Success ۞",
       wrongFormat: "Wrong format, try again in the menu",
       error: {
         stick: "not that sticker :v",
@@ -1360,7 +1360,7 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #allmenu`
+       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE !allmenu`
 
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU🐶'},type:1},
@@ -1372,7 +1372,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `シ︎ 𝙎𝙩𝙖𝙩𝙪𝙨 シ︎
+               footerText: `۞ 𝙎𝙩𝙖𝙩𝙪𝙨 ۞
                
  𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
  𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1410,12 +1410,12 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        menu = `
 🐶 Hi @${sender.split("@")[0]}
 
-シ︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
-シ︎ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
-シ︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
-シ︎ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
-シ︎ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
-シ︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
+۞ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
+۞ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
+۞ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
+۞ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
+۞ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
+۞ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
 ${readmore}
  
  ⬣ 𝙊𝙒𝙉𝙀𝙍 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
@@ -2012,7 +2012,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
  description: `Hi @${sender.split('@')[0]}, Please select the menu here`,
  sections: [
                      {
-                      "title": `Xeon`,
+                      "title": `Nischal`,
  rows: [
                           {
                               "title": "Script",
@@ -2069,7 +2069,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 xeon.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:ftrol})
 break
 case 'downloadmenu':
-menu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
+menu = `۞𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶۞
 ㋛${prefix}𝙮𝙩𝙢𝙥4 𝙡𝙞𝙣𝙠
 
 ㋛${prefix}𝙮𝙩𝙢𝙥3 𝙡𝙞𝙣𝙠
@@ -2084,13 +2084,13 @@ sendButMessage(from, menu, `𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭`, [
           {
             buttonId: `command`,
             buttonText: {
-              displayText: `𝘽𝙖𝙘𝙠 𝙈𝙚𝙣𝙪 シ︎`,
+              displayText: `𝘽𝙖𝙘𝙠 𝙈𝙚𝙣𝙪 ۞`,
             },
             type: 1,
           },]);
 break
 case 'groupmenu':
-menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
+menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎۞
 ㋛${prefix}grup [3 Button]
 
 ㋛${prefix}promote <reply chat member>
@@ -2145,7 +2145,7 @@ sendButMessage(from, menu, ` 𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭`, [
           },]);
 break
 case 'ownermenu':
-menu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
+menu = `۞𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶۞
 ㋛${prefix}off
 
 ㋛${prefix}bc
@@ -2227,7 +2227,7 @@ sendButMessage(from, menu, `𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭`, [
           },]);
 break
 case 'upswmenu':
-menu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
+menu = `۞𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶۞
 ㋛${prefix}upswteks teks
 
 ㋛${prefix}upswvideo
@@ -2250,7 +2250,7 @@ sendButMessage(from, menu, ` 𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭`, [
           },]);
 break
 case 'othermenu':
-menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
+menu = `۞𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶۞
 ㋛${prefix}ping
 
 ㋛${prefix}inspect
@@ -2339,7 +2339,7 @@ sendButMessage(from, menu, ` 𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭`, [
           },]);
 break
 case 'makermenu':
-menu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
+menu = `۞𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶۞
 ㋛${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
 
 ㋛${prefix}𝙨𝙬𝙢 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
@@ -2417,7 +2417,7 @@ case 'catalog':
         },
         "businessOwnerJid": sender
       },
-      "footerText": " 𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭"
+      "footerText": "𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭"
     }
   }, {quoted: freply})
   xeon.relayWAMessage(list, {waitForAck: true})
@@ -3941,7 +3941,7 @@ case 'bocil':
           {
             buttonId: `${prefix+command}`,
             buttonText: {
-              displayText: `Next シ︎`,
+              displayText: `Next ۞`,
             },
             type: 1,
           },
@@ -3954,7 +3954,7 @@ case '+91':
           {
             buttonId: `${prefix+command}`,
             buttonText: {
-              displayText: `Next シ︎`,
+              displayText: `Next ۞`,
             },
             type: 1,
           },
@@ -3967,7 +3967,7 @@ case 'santuy':
           {
             buttonId: `${prefix+command}`,
             buttonText: {
-              displayText: `Next シ︎`,
+              displayText: `Next ۞`,
             },
             type: 1,
           },
@@ -3980,7 +3980,7 @@ case 'ukhti':
           {
             buttonId: `${prefix+command}`,
             buttonText: {
-              displayText: `Next シ︎`,
+              displayText: `Next ۞`,
             },
             type: 1,
           },
@@ -3993,7 +3993,7 @@ case 'rikagusriani':
           {
             buttonId: `${prefix+command}`,
             buttonText: {
-              displayText: `Next シ︎`,
+              displayText: `Next ۞`,
             },
             type: 1,
           },
@@ -4006,7 +4006,7 @@ case 'ghea':
           {
             buttonId: `${prefix+command}`,
             buttonText: {
-              displayText: `Next シ︎`,
+              displayText: `Next ۞`,
             },
             type: 1,
           },
@@ -6477,4 +6477,4 @@ xeon.sendMessage(from, stdout, text, term)
     // console.log(e)
   }
 };
-// Endシ︎
+// End۞

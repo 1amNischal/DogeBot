@@ -1,6 +1,6 @@
-// Script by Xeon 
+// Script by Nischal 
 // 𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭
-// ©Nishi Incorporated
+// ©Nischal Bot Incorporated
 const {
     WAConnection: _WAConnection,
     MessageType,
@@ -99,7 +99,7 @@ const {
   const { addCommands, checkCommands, deleteCommands } = require('./lib/autoresp')
   // BATAS IMAGE FOLDER //
   const iye = fs.readFileSync('./stik/thumb.jpeg')
-  const asw1 = 'https://i.ibb.co/FbMnwYF/logo.jpg'
+  const asw1 = 'https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg'
   const sip = fs.readFileSync('./stik/oksip.jpeg')
   const bgg = fs.readFileSync('./stik/fake.jpeg')
   //// Image ///
@@ -124,7 +124,7 @@ const {
       }
    // BATAS \\
   menusimpel = false
-  banChats = true;
+  banChats = false;
   offline = false;
   antidel = false;
   welcom = false;
@@ -141,7 +141,7 @@ const {
   prefixStatus = false;
   targetpc = "918919822103"; 
   owner = "918919822103"; 
-  fakeyoi = "Nishi-Bot"; 
+  fakeyoi = "Nischal"; 
   HunterApi = "Ikyy69", 
   xchillds = 'XChillDs' 
   hardi = 'hardianto', 
@@ -151,7 +151,7 @@ const {
   ApiZeks = "https://api.zeks.xyz",
   zeksApikey = "Alphabott",
   nomorowner1 = "@918919822103"; 
-  fake = `𝗢𝘄𝗻𝗲𝗿 : ${fakeyoi}\n㋛︎ 𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "!"} 」`;
+  fake = `𝗢𝘄𝗻𝗲𝗿 : ${fakeyoi}\n㋛︎ 𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
   thumb = fs.readFileSync("./stik/thumb.jpeg"); 
   numbernye = "0"; 
   waktu = "-";
@@ -162,7 +162,7 @@ const {
   //=================================================//
   let _scommand = JSON.parse(fs.readFileSync("./database/scommand.json"));
   
-  // 𝗙𝘂𝗻𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 ۞
+  // 𝗙𝘂𝗻𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 シ︎
   const addCmd = (id, command) => {
     const obj = { id: id, chats: command };
     _scommand.push(obj);
@@ -251,7 +251,7 @@ const {
               var prefix = /^[°zZ#$@*+,.?=''():√%!¢£¥€π¤ΠΦ_&><`™©®Δ^βα¦|/\\©^]/.test(cmd) ? cmd.match(/^[°zZ#$@*+,.?=''():√%¢£¥€π¤ΠΦ_&><!`™©®Δ^βα¦|/\\©^]/gi) : '.'
           } else {
               if (nopref){
-                  prefix = '!'
+                  prefix = ''
               } else {
                   prefix = prefa
               }
@@ -420,8 +420,8 @@ const {
   cmhit.push(command)
       //MESS
       mess = {
-        wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 ۞",
-        success: "Success ۞",
+        wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 シ︎",
+        success: "Success シ︎",
         wrongFormat: "Wrong format, try again in the menu",
         error: {
           stick: "not that sticker :v",
@@ -481,7 +481,7 @@ const {
             thumbnail: iye,
             surface: 200,
             message: iye,
-            orderTitle: "Nishi",
+            orderTitle: "Nischal",
             sellerJid: "0@s.whatsapp.net",
           },
         },
@@ -793,7 +793,7 @@ const {
                 jpegThumbnail: fs.readFileSync(`./stik/thumb.jpeg`), //Gambarnye
               },
               title: "FakeReply Bang", //Kasih namalu
-              description: "Nishi",
+              description: "Nischal",
               currencyCode: "USD",
               priceAmount1000: "2000",
               retailerId: "𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭",
@@ -922,7 +922,7 @@ const {
         xeon.groupAdd(from, orangnya);
       };
           const grupinv = (teks) => {
-              grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://wa.link/zmazip', "groupName": `Nishi Inc.`, "footerText": "*_𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
+              grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `Nischal Bot Inc.`, "footerText": "*_𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
               xeon.relayWAMessage(grup)
           }
   const fakeitem = (teks) => {
@@ -939,7 +939,7 @@ const {
                xeon.relayWAMessage(res)
           }
   const fakewa = (teks) => {        
-  xeon.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `Xeon`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/918919822103?text=hello`}}})
+  xeon.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `Nischal`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/918919822103?text=hello`}}})
           }
   const replyfakelink = (teks) => {
   xeon.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
@@ -950,7 +950,7 @@ const {
                   "title": `Whatsapp-BOT\n𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭. (@nnda.krnwn_) •Instagram photos and Videos`,
                   "body": "",
                   "previewType": "PHOTO",
-                  "thumbnailUrl": "https://i.ibb.co/FbMnwYF/logo.jpg",
+                  "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
                   "thumbnail": fake,
                   "sourceUrl": ``
   },mentionedJid:[sender]}, quoted : fgif})
@@ -965,7 +965,7 @@ const {
                   "body": `wa.me/918919822103`,
                   "mediaType": "10",
                   "mediaUrl": `wa.me/918919822103`,
-                  "thumbnailUrl": "https://i.ibb.co/FbMnwYF/logo.jpg",
+                  "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
                   "thumbnail": iye,
                   "sourceUrl": `wa.me/918919822103`,
   },mentionedJid:[sender]}, quoted : mek})
@@ -979,8 +979,8 @@ const {
   "title": `Hello ${pushname}` ,
   "body": `${ucapanWaktu}`,
   "mediaType": "2",
-  "thumbnailUrl": "https://i.ibb.co/FbMnwYF/logo.jpg",
-  "mediaUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
+  "mediaUrl": "https://www.youtube.com/watch?v=6F2JAtmYD98",
   "thumbnail": fs.readFileSync('./stik/thumb.jpeg'),
   "sourceUrl": "",
   },mentionedJid:[sender]}, quoted : fgif})
@@ -1263,27 +1263,27 @@ const {
           xeon.groupRemove(from, [sender]);
         }
       }
-      //auto voice note by xeon
-  //     for (let anju of vien){
-  //                 if (budy === anju){
-  //                     result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-  //                     xeon.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
-  //                     }
-  //             }
-  //             //auto sticker
-  //             for (let anji of setik){
-  //                 if (budy === anji){
-  //                     result = fs.readFileSync(`./media/sticker/${anji}.webp`)
-  //                     xeon.sendMessage(from, result, sticker, { quoted: mek})
-  //                     }
-  //             }
-  //             //auto image
-  //             for (let anjh of imagi){
-  //                 if (budy === anjh){
-  //                     result = fs.readFileSync(`./media/image/${anjh}.jpg`)
-  //                     xeon.sendMessage(from, result, image, { quoted: mek})
-  //                     }
-  //             }
+    //   //auto voice note by xeon
+    //   for (let anju of vien){
+    //               if (budy === anju){
+    //                   result = fs.readFileSync(`./media/vn/${anju}.mp3`)
+    //                   xeon.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
+    //                   }
+    //           }
+    //           //auto sticker
+    //           for (let anji of setik){
+    //               if (budy === anji){
+    //                   result = fs.readFileSync(`./media/sticker/${anji}.webp`)
+    //                   xeon.sendMessage(from, result, sticker, { quoted: mek})
+    //                   }
+    //           }
+    //           //auto image
+    //           for (let anjh of imagi){
+    //               if (budy === anjh){
+    //                   result = fs.readFileSync(`./media/image/${anjh}.jpg`)
+    //                   xeon.sendMessage(from, result, image, { quoted: mek})
+    //                   }
+    //           }
               // auto text 
               for (var i = 0; i < commandsDB.length ; i++) {
                   if (budy.toLowerCase() === commandsDB[i].pesan) {
@@ -1336,7 +1336,7 @@ const {
            haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
                buttons = [{buttonId: `menu`,buttonText:{displayText: `</️MENU`},type:1}]
                 imageMsg = (await xeon.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-                buttonsMessage = {footerText:'By Nischal', imageMessage: imageMsg,
+                buttonsMessage = {footerText:'Nischal', imageMessage: imageMsg,
                 contentText:`${anuu}`,buttons,headerType:4}
                 prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
                 xeon.relayWAMessage(prep)
@@ -1360,7 +1360,7 @@ const {
                 latensie = speed() - timestampe
                 total = math(`${groups.length}*${privat.length}`)
   if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-         txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE !allmenu`
+         txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #allmenu`
   
                  buttons = [{buttonId:`allmenu`, 
                  buttonText:{displayText: 'MENU🐶'},type:1},
@@ -1372,7 +1372,7 @@ const {
   
                  buttonsMessage = {
                  contentText: `${txtt}`,
-                 footerText: `۞ 𝙎𝙩𝙖𝙩𝙪𝙨 ۞
+                 footerText: `シ︎ 𝙎𝙩𝙖𝙩𝙪𝙨 シ︎
                  
    𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
    𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1389,7 +1389,7 @@ const {
                  break
   
           case 'allmenu':
-          case 'By Nischal':
+          case 'xeon':
   groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
                 privat = xeon.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
                 ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1410,12 +1410,12 @@ const {
          menu = `
   🐶 Hi @${sender.split("@")[0]}
   
-  ۞ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
-  ۞ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
-  ۞ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
-  ۞ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
-  ۞ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
-  ۞ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
+  シ︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
+  シ︎ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
+  シ︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
+  シ︎ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
+  シ︎ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
+  シ︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
   ${readmore}
    
    ⬣ 𝙊𝙒𝙉𝙀𝙍 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
@@ -1449,16 +1449,16 @@ const {
   > ⬡ ${prefix}term <code>
   > ⬡ ${prefix}eval <code>
   > ⬡ ${prefix}colongsw reply
-  > ⬡ ${prefix}addvn <reply audio with name>
-  > ⬡ ${prefix}delvn <audio name>
-  > ⬡ ${prefix}vnlist
-  > ⬡ ${prefix}addsticker <reply sticker with name>
-  > ⬡ ${prefix}delsticker <sticker name>
-  > ⬡ ${prefix}stickerlist
-  > ⬡ ${prefix}addimage <reply image with name>
-  > ⬡ ${prefix}delimage <image name>
-  > ⬡ ${prefix}imagelist
-  > ⬡ ${prefix}bc
+   > ⬡ ${prefix}addvn <reply audio with name>
+   > ⬡ ${prefix}delvn <audio name>
+   > ⬡ ${prefix}vnlist
+   > ⬡ ${prefix}addsticker <reply sticker with name>
+   > ⬡ ${prefix}delsticker <sticker name>
+   > ⬡ ${prefix}stickerlist
+   > ⬡ ${prefix}addimage <reply image with name>
+   > ⬡ ${prefix}delimage <image name>
+   > ⬡ ${prefix}imagelist
+    > ⬡ ${prefix}bc
   
   
    ⬣ 𝙂𝙍𝙊𝙐𝙋 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
@@ -1591,37 +1591,39 @@ const {
   > ⬡ ${prefix}pretty
   
   
+   ⬣ 𝙉𝙎𝙁𝙒 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
+  > ⬡ ${prefix}yuri
+  > ⬡ ${prefix}hentai
+  > ⬡ ${prefix}anal
+  > ⬡ ${prefix}eroneko
+  > ⬡ ${prefix}lesbian
+  > ⬡ ${prefix}kitsune
+  > ⬡ ${prefix}bj
+  > ⬡ ${prefix}pussy
+  > ⬡ ${prefix}wallpaper
+  > ⬡ ${prefix}neko2
+  > ⬡ ${prefix}baka
+  > ⬡ ${prefix}slap
+  > ⬡ ${prefix}poke
+  > ⬡ ${prefix}keta
+  > ⬡ ${prefix}awoo
+  > ⬡ ${prefix}blowjob
+  > ⬡ ${prefix}megumin
+  > ⬡ ${prefix}neko
+  > ⬡ ${prefix}trapnime
+  
   𝗡𝗼𝘁𝗲 : Horny = Bonks💥
   Just Learn to Make Bots 🐶
    
   𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
   `
   sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`credit`,buttonText:{displayText:'THANKS TO'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-  // ⬣ 𝙉𝙎𝙁𝙒 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-  // > ⬡ ${prefix}yuri
-  // > ⬡ ${prefix}hentai
-  // > ⬡ ${prefix}anal
-  // > ⬡ ${prefix}eroneko
-  // > ⬡ ${prefix}lesbian
-  // > ⬡ ${prefix}kitsune
-  // > ⬡ ${prefix}bj
-  // > ⬡ ${prefix}pussy
-  // > ⬡ ${prefix}wallpaper
-  // > ⬡ ${prefix}neko2
-  // > ⬡ ${prefix}baka
-  // > ⬡ ${prefix}slap
-  // > ⬡ ${prefix}poke
-  // > ⬡ ${prefix}keta
-  // > ⬡ ${prefix}awoo
-  // > ⬡ ${prefix}blowjob
-  // > ⬡ ${prefix}megumin
-  // > ⬡ ${prefix}neko
-  // > ⬡ ${prefix}trapnime
+  
   break
   case 'credit':
      dtod = '918919822103'
      dtod1 = '918919822103'
-     dtod2 = '918919822103'
+     dtod2 = '919774340154'
      dtod3 = ''
      dtod4 ='0'
      var yez = `
@@ -1770,7 +1772,8 @@ const {
   case 'iggw':
   if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
     reply('*click on the link below*\nwa.me/918919822103')
-  break   
+  break
+     
   case 'owner':
              case 'creator':
                
@@ -1854,9 +1857,9 @@ const {
                   "title": `${virtex2(prefix)}`,
                   "body": "",
                   "previewType": "PHOTO",
-                  "thumbnailUrl": "https://i.ibb.co/FbMnwYF/logo.jpg",
+                  "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
                   "thumbnail": fs.readFileSync(`./xeon.jpg`),
-                  "sourceUrl": "https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A"}}})
+                  "sourceUrl": "https://www.youtube.com/watch?v=6F2JAtmYD98"}}})
                   break
           case 'bugbutton':
           if (!isOwner && !mek.key.fromMe) return reply('Only owner can use this feature')
@@ -1991,7 +1994,7 @@ const {
   for (let i of nomorowner1) {
   const vname = xeon.contacts[i] != undefined ? xeon.contacts[i].vname || xeon.contacts[i].notify : undefined
   ini_list.push({
-  "displayName": 'By Nischal',
+  "displayName": 'Nischal',
   "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xeon.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
   })
   }
@@ -2066,7 +2069,7 @@ const {
   xeon.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:ftrol})
   break
   case 'downloadmenu':
-  menu = `۞𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶۞
+  menu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
   ㋛${prefix}𝙮𝙩𝙢𝙥4 𝙡𝙞𝙣𝙠
   
   ㋛${prefix}𝙮𝙩𝙢𝙥3 𝙡𝙞𝙣𝙠
@@ -2081,13 +2084,13 @@ const {
             {
               buttonId: `command`,
               buttonText: {
-                displayText: `𝘽𝙖𝙘𝙠 𝙈𝙚𝙣𝙪 ۞`,
+                displayText: `𝘽𝙖𝙘𝙠 𝙈𝙚𝙣𝙪 シ︎`,
               },
               type: 1,
             },]);
   break
   case 'groupmenu':
-  menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎۞
+  menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
   ㋛${prefix}grup [3 Button]
   
   ㋛${prefix}promote <reply chat member>
@@ -2142,7 +2145,7 @@ const {
             },]);
   break
   case 'ownermenu':
-  menu = `۞𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶۞
+  menu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
   ㋛${prefix}off
   
   ㋛${prefix}bc
@@ -2224,7 +2227,7 @@ const {
             },]);
   break
   case 'upswmenu':
-  menu = `۞𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶۞
+  menu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
   ㋛${prefix}upswteks teks
   
   ㋛${prefix}upswvideo
@@ -2247,7 +2250,7 @@ const {
             },]);
   break
   case 'othermenu':
-  menu = `۞𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶۞
+  menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
   ㋛${prefix}ping
   
   ㋛${prefix}inspect
@@ -2336,7 +2339,7 @@ const {
             },]);
   break
   case 'makermenu':
-  menu = `۞𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶۞
+  menu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
   ㋛${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
   
   ㋛${prefix}𝙨𝙬𝙢 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
@@ -2414,7 +2417,7 @@ const {
           },
           "businessOwnerJid": sender
         },
-        "footerText": "𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭"
+        "footerText": " 𝐍𝐢𝐬𝐡𝐢-𝐁𝐨𝐭"
       }
     }, {quoted: freply})
     xeon.relayWAMessage(list, {waitForAck: true})
@@ -2440,7 +2443,7 @@ const {
   case 'script':
           case 'sc':
           case 'sourcecode':
-          xeon.sendMessage(from, { text: "Bots Source Code Will Be Available Soon!", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+          xeon.sendMessage(from, { text: "Script By Nischal", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
           break
         //------------------< Sticker Cmd >-------------------
         case "addcmd":
@@ -3066,7 +3069,7 @@ const {
                       teks = (args.length > 1) ? body.slice(8).trim() : ''
                       teks += '\n\n'
                       for (let mem of groupMembers) {
-                          teks += `🦄 @${mem.jid.split('@')[0]}\n`
+                          teks += `😺 @${mem.jid.split('@')[0]}\n`
                           members_id.push(mem.jid)
                       }
                       mentions(teks, members_id, true)
@@ -3921,7 +3924,7 @@ const {
                   await sleep(1000)
                   xeon.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
   case 'mygithub':
-    reply('Not Available Yet!')
+    reply('https://github.com/DGXeon')
                       break;
      case 'ss':
         reply(mess.wait)
@@ -3938,7 +3941,7 @@ const {
             {
               buttonId: `${prefix+command}`,
               buttonText: {
-                displayText: `Next ۞`,
+                displayText: `Next シ︎`,
               },
               type: 1,
             },
@@ -3951,7 +3954,7 @@ const {
             {
               buttonId: `${prefix+command}`,
               buttonText: {
-                displayText: `Next ۞`,
+                displayText: `Next シ︎`,
               },
               type: 1,
             },
@@ -3964,7 +3967,7 @@ const {
             {
               buttonId: `${prefix+command}`,
               buttonText: {
-                displayText: `Next ۞`,
+                displayText: `Next シ︎`,
               },
               type: 1,
             },
@@ -3977,7 +3980,7 @@ const {
             {
               buttonId: `${prefix+command}`,
               buttonText: {
-                displayText: `Next ۞`,
+                displayText: `Next シ︎`,
               },
               type: 1,
             },
@@ -3990,7 +3993,7 @@ const {
             {
               buttonId: `${prefix+command}`,
               buttonText: {
-                displayText: `Next ۞`,
+                displayText: `Next シ︎`,
               },
               type: 1,
             },
@@ -4003,7 +4006,7 @@ const {
             {
               buttonId: `${prefix+command}`,
               buttonText: {
-                displayText: `Next ۞`,
+                displayText: `Next シ︎`,
               },
               type: 1,
             },
@@ -5527,7 +5530,7 @@ const {
                 let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
                 let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
                 fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
-                buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`owner`,buttonText:{displayText:'🦄OWNER'},type:1}]
+                buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`owner`,buttonText:{displayText:'😺OWNER'},type:1}]
                 imageMsg = ( await xeon.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
                 buttonsMessage = {footerText:'Dont forget to donate lol ☕', imageMessage: imageMsg,
                 contentText:`Click Next to go to the next picture`,buttons,headerType:4}
@@ -5561,7 +5564,7 @@ const {
               "body": `Here ${query}`,
               "mediaType": "2",
               "thumbnailUrl": `${get_resultP.image_thumbnail}`,
-              "mediaUrl": "https://www.youtube.com/watch?v=kCMtQM5XSiM",
+              "mediaUrl": "https://youtu.be/CsMOwV0QGMk",
               "thumbnail": fs.readFileSync("./xeon.jpg"),
               "sourceUrl": "http://ziy.herokuapp.com"
               },mentionedJid:[sender]}, quoted : mek})
@@ -6382,7 +6385,7 @@ const {
   if (!isOwner)return// reply(`This command can not be carried out by rent bot temporarily`)
   if (!q)return 
   var itsme = `${sender}`
-  var split = `*Nishi Inc.*`
+  var split = `*Nischal  Bot Inc.*`
   const term = {
   contextInfo: {
   participant: itsme,
@@ -6474,5 +6477,5 @@ const {
       // console.log(e)
     }
   };
-  // End۞
+  // Endシ︎
   

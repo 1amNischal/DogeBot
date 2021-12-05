@@ -1360,12 +1360,12 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE !allmenu`
+       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #allmenu`
 
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU🐶'},type:1},
                {buttonId:`owner`,buttonText:{displayText:'CREATOR🐶'},type:1},
-              //  {buttonId:`command`,buttonText:{displayText:'LIST MENU🐶'},type:1}]
+               {buttonId:`command`,buttonText:{displayText:'LIST MENU🐶'},type:1}]
 
 
                imageMsg = (await xeon.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage

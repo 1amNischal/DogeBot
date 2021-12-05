@@ -130,7 +130,7 @@ antidel = false;
 welcom = true;
 antical = false
 readGc = true; 
-readPc = ture;
+readPc = true;
 autovn = false;
 multi = true
 harga = 0
@@ -1449,16 +1449,16 @@ ${readmore}
 > ⬡ ${prefix}term <code>
 > ⬡ ${prefix}eval <code>
 > ⬡ ${prefix}colongsw reply
- > ⬡ ${prefix}addvn <reply audio with name>
- > ⬡ ${prefix}delvn <audio name>
- > ⬡ ${prefix}vnlist
- > ⬡ ${prefix}addsticker <reply sticker with name>
- > ⬡ ${prefix}delsticker <sticker name>
- > ⬡ ${prefix}stickerlist
- > ⬡ ${prefix}addimage <reply image with name>
- > ⬡ ${prefix}delimage <image name>
- > ⬡ ${prefix}imagelist
-  > ⬡ ${prefix}bc
+> ⬡ ${prefix}addvn <reply audio with name>
+> ⬡ ${prefix}delvn <audio name>
+> ⬡ ${prefix}vnlist
+> ⬡ ${prefix}addsticker <reply sticker with name>
+> ⬡ ${prefix}delsticker <sticker name>
+> ⬡ ${prefix}stickerlist
+> ⬡ ${prefix}addimage <reply image with name>
+> ⬡ ${prefix}delimage <image name>
+> ⬡ ${prefix}imagelist
+> ⬡ ${prefix}bc
 
 
  ⬣ 𝙂𝙍𝙊𝙐𝙋 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
@@ -1591,34 +1591,32 @@ ${readmore}
 > ⬡ ${prefix}pretty
 
 
- ⬣ 𝙉𝙎𝙁𝙒 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}yuri
-> ⬡ ${prefix}hentai
-> ⬡ ${prefix}anal
-> ⬡ ${prefix}eroneko
-> ⬡ ${prefix}lesbian
-> ⬡ ${prefix}kitsune
-> ⬡ ${prefix}bj
-> ⬡ ${prefix}pussy
-> ⬡ ${prefix}wallpaper
-> ⬡ ${prefix}neko2
-> ⬡ ${prefix}baka
-> ⬡ ${prefix}slap
-> ⬡ ${prefix}poke
-> ⬡ ${prefix}keta
-> ⬡ ${prefix}awoo
-> ⬡ ${prefix}blowjob
-> ⬡ ${prefix}megumin
-> ⬡ ${prefix}neko
-> ⬡ ${prefix}trapnime
-
 𝗡𝗼𝘁𝗲 : Horny = Bonks💥
 Just Learn to Make Bots 🐶
  
 𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
 `
 sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`credit`,buttonText:{displayText:'THANKS TO'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-
+// ⬣ 𝙉𝙎𝙁𝙒 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
+// > ⬡ ${prefix}yuri
+// > ⬡ ${prefix}hentai
+// > ⬡ ${prefix}anal
+// > ⬡ ${prefix}eroneko
+// > ⬡ ${prefix}lesbian
+// > ⬡ ${prefix}kitsune
+// > ⬡ ${prefix}bj
+// > ⬡ ${prefix}pussy
+// > ⬡ ${prefix}wallpaper
+// > ⬡ ${prefix}neko2
+// > ⬡ ${prefix}baka
+// > ⬡ ${prefix}slap
+// > ⬡ ${prefix}poke
+// > ⬡ ${prefix}keta
+// > ⬡ ${prefix}awoo
+// > ⬡ ${prefix}blowjob
+// > ⬡ ${prefix}megumin
+// > ⬡ ${prefix}neko
+// > ⬡ ${prefix}trapnime
 break
 case 'credit':
    dtod = '918919822103'
@@ -1773,6 +1771,15 @@ case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
   reply('*click on the link below*\nwa.me/918919822103')
 break
+
+case 'insult':
+  if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
+    const insultApi = "https://evilinsult.com/generate_insult.php?lang=en&type=json";
+      async function getInsult() {
+        const response = await fetch(insultApi);
+        const data = await response.json();
+        reply(`${data.insult}`)
+      }
    
 case 'owner':
            case 'creator':

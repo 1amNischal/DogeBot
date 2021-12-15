@@ -1789,8 +1789,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                sendKontak(from, `${owner}`, `${fakeyoi}`, 'Busy!!')
                await sleep(1000)
                haibg =`Hi ${pushname}\nThats my owner, What do you want to know about??`
-               buttons = [{buttonId: `my
-	       `,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'PM ON WHATSAPP'},type:1}]
+               buttons = [{buttonId: `mygithub`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'PM ON WHATSAPP'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Created By ${fakeyoi} 🌿`, buttons: buttons, headerType: 1 }
                prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
                xeon.relayWAMessage(prep)
@@ -2021,54 +2020,54 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
  description: `Hi @${sender.split('@')[0]}, ℙ𝕝𝕖𝕒𝕤𝕖 𝕤𝕖𝕝𝕖𝕔𝕥 𝕥𝕙𝕖 𝕞𝕖𝕟𝕦 𝕙𝕖𝕣𝕖`,
  sections: [
                      {
-                      "title": `🍑  🎀  𝒩𝒾𝓈𝒽𝒾  🎀  🍑`,
+                      "title": `🍑  🎀 Nischal  🎀  🍑`,
  rows: [
                           {
-                              "title": "📜Script",
+                              "title": "Script",
                               "rowId": ""
                            },
                            {
-                              "title": "🚄Speed",
+                              "title": "Speed",
                               "rowId": ""
                            },
                            {
-                              "title": "🗿Status",
+                              "title": "Status",
                               "rowId": ""
                            },
                            {
-                              "title": "😇Creator",
-                              "rowId": ""
-                           },
-                          //  {
-                          //     "title": "Rentbot",
-                          //     "rowId": ""
-                          //  },
-                           {
-                              "title": "⌚Runtime",
+                              "title": "Creator",
                               "rowId": ""
                            },
                            {
-                              "title": "🦉OwnerMenu",
+                              "title": "Rentbot",
                               "rowId": ""
                            },
                            {
-                              "title": "👾MakerMenu",
+                              "title": "Runtime",
                               "rowId": ""
                            },
                            {
-                              "title": "👨‍👩‍👧‍👧GroupMenu",
+                              "title": "OwnerMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "🦦OtherMenu",
+                              "title": "MakerMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "🔽DownloadMenu",
+                              "title": "GroupMenu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "OtherMenu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "DownloadMenu",
                               "rowId": "d"
                            },
                            {
-                              "title": "👍UpswMenu",
+                              "title": "UpswMenu",
                               "rowId": ""
                            }
                         ]
@@ -3933,7 +3932,7 @@ case 'hacked':
                 await sleep(1000)
                 xeon.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
 case 'mygithub':
-  reply('Creating Soon')
+  reply('https://github.com/BHUTUU/')
 					break;
    case 'ss':
       reply(mess.wait)
@@ -4061,7 +4060,7 @@ costick3 = await xeon.prepareMessageFromContent(from,{
 xeon.relayWAMessage(costick3)
 break
       case "rentbot":
-        if (!mek.key.fromMe) return reply("Cant be a rentbot in a bot");
+        if (!mek.key.fromMe) return reply("Dm the Owner");
         jadibot(reply, xeon, from);
         break;
       case "stoprentbot":

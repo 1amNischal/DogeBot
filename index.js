@@ -378,8 +378,8 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\n Verify To Kr Bhai 🤭 `
-       const daftar2 = '```verify pe click karo \nNishi Bot```'
+const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\n Sirr/Memm You Must Verify Before usin Da Bot 🤭 `
+       const daftar2 = '```Click the Verify Button..if you using GB Verify in the Bots DM \nNishi Bot```'
        const daftar3 = [
           {
             buttonId: `verify`,

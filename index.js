@@ -1789,7 +1789,8 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                sendKontak(from, `${owner}`, `${fakeyoi}`, 'Busy!!')
                await sleep(1000)
                haibg =`Hi ${pushname}\nThats my owner, What do you want to know about??`
-               buttons = [{buttonId: `mygithub`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'PM ON WHATSAPP'},type:1}]
+               buttons = [{buttonId: `my
+	       `,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'PM ON WHATSAPP'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Created By ${fakeyoi} 🌿`, buttons: buttons, headerType: 1 }
                prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
                xeon.relayWAMessage(prep)
@@ -2002,7 +2003,7 @@ let ini_list = []
 for (let i of nomorowner1) {
 const vname = xeon.contacts[i] != undefined ? xeon.contacts[i].vname || xeon.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'Xeon',
+"displayName": 'Nishi',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xeon.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2020,54 +2021,54 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
  description: `Hi @${sender.split('@')[0]}, ℙ𝕝𝕖𝕒𝕤𝕖 𝕤𝕖𝕝𝕖𝕔𝕥 𝕥𝕙𝕖 𝕞𝕖𝕟𝕦 𝕙𝕖𝕣𝕖`,
  sections: [
                      {
-                      "title": `Xeon`,
+                      "title": `🍑  🎀  𝒩𝒾𝓈𝒽𝒾  🎀  🍑`,
  rows: [
                           {
-                              "title": "Script",
+                              "title": "📜Script",
                               "rowId": ""
                            },
                            {
-                              "title": "Speed",
+                              "title": "🚄Speed",
                               "rowId": ""
                            },
                            {
-                              "title": "Status",
+                              "title": "🗿Status",
                               "rowId": ""
                            },
                            {
-                              "title": "Creator",
+                              "title": "😇Creator",
+                              "rowId": ""
+                           },
+                          //  {
+                          //     "title": "Rentbot",
+                          //     "rowId": ""
+                          //  },
+                           {
+                              "title": "⌚Runtime",
                               "rowId": ""
                            },
                            {
-                              "title": "Rentbot",
+                              "title": "🦉OwnerMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "Runtime",
+                              "title": "👾MakerMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "OwnerMenu",
+                              "title": "👨‍👩‍👧‍👧GroupMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "MakerMenu",
+                              "title": "🦦OtherMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "GroupMenu",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "OtherMenu",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "DownloadMenu",
+                              "title": "🔽DownloadMenu",
                               "rowId": "d"
                            },
                            {
-                              "title": "UpswMenu",
+                              "title": "👍UpswMenu",
                               "rowId": ""
                            }
                         ]
@@ -3932,7 +3933,7 @@ case 'hacked':
                 await sleep(1000)
                 xeon.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
 case 'mygithub':
-  reply('https://github.com/BHUTUU/')
+  reply('Creating Soon')
 					break;
    case 'ss':
       reply(mess.wait)
